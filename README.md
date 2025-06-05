@@ -7,8 +7,9 @@ The error occurs with Java 17 or 21 (Groovy doesn't seem to be compatible with 2
 To run it, source the environment variables and run the script - dependencies are included.
 
 ```
+gradle copyDeps
 source env.sh
-java -classpath "./_deps/*" org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --classpath ./src/main/java:./src/main/resources ./src/main/java/de/crash/the/jvm/srv/gen/CrashTheJvm.groovy -e
+java -classpath "./build/dependencies/*" org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --classpath ./src/main/java:./src/main/resources ./src/main/java/de/crash/the/jvm/srv/gen/CrashTheJvm.groovy -e
 ```
 
 ```
