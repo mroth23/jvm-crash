@@ -2,7 +2,7 @@
 
 This little program crashes the JVM with a SIGSEGV in the C2 compiler.
 
-The error occurs with Java 17 or 21 (Groovy doesn't seem to be compatible with 24).
+The error occurs with Java 17 or 21 (we didn't try 24 due to compatibility issues).
 
 To run it, get the dependencies with gradle, source the environment variables and run the script.
 
